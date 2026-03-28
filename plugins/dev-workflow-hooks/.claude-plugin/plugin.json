@@ -1,0 +1,5 @@
+{
+  "name": "dev-workflow-hooks",
+  "description": "開発ワークフロー向け Claude Code hooks をセットアップする",
+  "version": "0.1.0"
+}
