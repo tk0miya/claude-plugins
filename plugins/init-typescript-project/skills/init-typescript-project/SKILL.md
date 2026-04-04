@@ -89,6 +89,7 @@ npx biome init
 | `vscode/extensions.json` | `.vscode/extensions.json` |
 | `workflows/ci.yml` | `.github/workflows/ci.yml` |
 | `workflows/auto-merge.yml` | `.github/workflows/auto-merge.yml` |
+| `workflows/actionlint.yml` | `.github/workflows/actionlint.yml` |
 | `dependabot.yml` | `.github/dependabot.yml` |
 
 設定ファイルの配置後、`setup-dev-workflow-hooks` スキルを実行して開発ワークフロー向け hooks をセットアップする。
