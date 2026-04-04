@@ -104,6 +104,7 @@ bundle init
 | `workflows/rbs_collection.yml` | `.github/workflows/rbs_collection.yml` | 常時 |
 | `workflows/auto-merge.yml` | `.github/workflows/auto-merge.yml` | 常時 |
 | `workflows/release.yml` | `.github/workflows/release.yml` | gem を作る場合のみ |
+| `workflows/actionlint.yml` | `.github/workflows/actionlint.yml` | 常時 |
 
 また、以下のテンプレートも配置する:
 
