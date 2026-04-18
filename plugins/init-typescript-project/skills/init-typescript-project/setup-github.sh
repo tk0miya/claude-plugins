@@ -37,6 +37,9 @@ gh api "repos/${REPO}" \
   --field allow_auto_merge=true \
   --field delete_branch_on_merge=true
 
+echo "==> Creating labels"
+gh label create "auto-merge" --color "0075ca" --description "Automatically merge this PR" --repo "$REPO"
+
 echo "==> Enabling Dependabot"
 gh api "repos/${REPO}/vulnerability-alerts" --method PUT
 gh api "repos/${REPO}/automated-security-fixes" --method PUT
