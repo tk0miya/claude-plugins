@@ -1,19 +1,26 @@
 # claude-plugins
 
-A marketplace repository for Claude Code plugins.
+A repository of [agent skills](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-skills) installable via `gh skill`.
 
 ## About
 
-This repository contains plugins for [Claude Code](https://claude.ai/claude-code).
-Each plugin is stored under the `plugins/` directory.
+Each skill lives under `skills/<skill-name>/` with a `SKILL.md` and any supporting files. The skills are designed primarily for [Claude Code](https://claude.ai/claude-code), but the layout follows the standard agent skill spec.
 
-## Adding this marketplace
+## Installation
+
+Install a skill at user scope (available across all projects):
 
 ```
-/plugin marketplace add tk0miya/claude-plugins
+gh skill install tk0miya/claude-plugins <skill-name> --agent claude-code --scope user
 ```
 
-## Plugins
+Or at project scope (writes into the current repo's `.claude/skills/`):
+
+```
+gh skill install tk0miya/claude-plugins <skill-name> --agent claude-code --scope project
+```
+
+## Skills
 
 ### init-ruby-project
 
@@ -27,8 +34,14 @@ Sets up the following automatically:
 - VSCode settings
 - GitHub repository creation and branch protection rules
 
-#### Usage
+### init-typescript-project
 
-```
-/init-ruby-project
-```
+Automates the initial setup of a TypeScript project.
+
+### setup-ruby-hooks
+
+Installs Claude Code hooks tailored for Ruby projects (rbs-inline, pre-commit checks, sig protection, etc.).
+
+### setup-dev-workflow-hooks
+
+Installs Claude Code hooks for general development workflow (self-review, etc.).
