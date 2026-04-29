@@ -1,4 +1,4 @@
-# claude-plugins
+# skills
 
 A repository of [agent skills](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/add-skills) installable via `gh skill`.
 
@@ -11,13 +11,13 @@ Each skill lives under `skills/<skill-name>/` with a `SKILL.md` and any supporti
 Install a skill at user scope (available across all projects):
 
 ```
-gh skill install tk0miya/claude-plugins <skill-name> --agent claude-code --scope user
+gh skill install tk0miya/skills <skill-name> --agent claude-code --scope user
 ```
 
 Or at project scope (writes into the current repo's `.claude/skills/`):
 
 ```
-gh skill install tk0miya/claude-plugins <skill-name> --agent claude-code --scope project
+gh skill install tk0miya/skills <skill-name> --agent claude-code --scope project
 ```
 
 ## Skills
