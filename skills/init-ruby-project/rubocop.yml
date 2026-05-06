@@ -3,7 +3,6 @@
 AllCops:
   NewCops: enable
   TargetRubyVersion: {{RUBY_VERSION}}
-  SuggestExtensions: false
 
 plugins:
   - rubocop-numbered-params
